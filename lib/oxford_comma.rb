@@ -1,6 +1,9 @@
 def oxford_comma(array)
-  #array.join(", ")
+  index = array.size - 1
+  new_array = array.insert(index, "and")
+  new_array.join(", ")
 
-  return array.to_sentence
+
+  #return array.to_sentence
 
 end
